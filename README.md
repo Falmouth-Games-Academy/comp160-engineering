@@ -12,3 +12,10 @@ Please ensure that you reference appropirate academic literature and ensure that
 
 
 # Question: 
+
+
+# References:
+
+[http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/142155/](Software engineering globalization and localization
+
+)
