@@ -1,6 +1,6 @@
 # Engineering for portability.
 
-## What must be considered during a portable game's development?
+## How can portability be made more efficient in game development?
 
 A game's portability is a reference to the hardware and software abstractions that have facilitated the ability to play a game on different hardware and on different operating systems.
 
