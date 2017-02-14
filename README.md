@@ -21,14 +21,12 @@ __During the software development process what precautions can we think about fo
 # References:
 
 [Software engineering globalization and localization](http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/142155/)
-[Key challenges in software internationalisation](http://dl.acm.org.ezproxy.falmouth.ac.uk/citation.cfm?id=976469&CFID=727982352&CFTOKEN=92133112)
 Engineering for multiple languages keeping functionality the same
 
 [Linguistic implementations in computer game and virtual world design](http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/6934142/)
 Looks at the way language is used to express emotion and interest in games
 
 [Key challenges in software internationalisation](http://dl.acm.org.ezproxy.falmouth.ac.uk/citation.cfm?id=976469&CFID=727982352&CFTOKEN=92133112)
-Title speaks for itself
 
 [LISA & GALA Industry Standards](https://www.gala-global.org/resources/industry-standards)
 
