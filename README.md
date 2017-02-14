@@ -1,2 +1,5 @@
-# comp150-agile
-Essay on the Agile Philosophy
+### Comp160-Engineering
+##Proposal
+#  What are the difficulties of implementing new algorthims to a highly coupled system?
+This essay hopes to provide instruction to anyone wanting to implement new algorithms to an already developed highly coupled system. To this end, the introduction of this essay will highlight the the risks of working in a highly coupled system and how this may affect the integrity of the algorithms you intend to implement. I will show how these risks will make it more difficult to add new function to your system by comparing it to systems with better organisation with the aid of diagrams. Using examples I will compare the solutions and workarounds used in the software and game industry to provide a method of approaching the system and ways to reduce the likelihood of problems occurring from dependencies. To conclude my essay, I will suggest a general method of approach for high dependency systems specific to games and how to adapt the approach depending on the desired functionality. 
+
