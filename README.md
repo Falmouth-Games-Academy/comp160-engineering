@@ -1,11 +1,4 @@
-# COMP160 Software Engineering Essay
-Essay on the Software Engineering
+# Engineering Software for Accessibility
 
-Please note, your research questions should focus on *ONE* of these themes:
+The demand for software which is accessible by members of the public suffering with mental impairments has been on the rise and since June 2001 under section 508 of the Rehabilitation act \cite{cohen2005accessibility} agencies in America have been obliged to offer aids to the people to allow them to access information which others are also able to access. Over one in five adults suffer from some sort of disability, both mental and physical, worldwide \cite{sierkowski2002achieving} which would mean ignoring this issue would effectively be discarding 20 percent of the potential market which for any reasonable developer is too big a margin to ignore.  Another issue which doesn't help the matter is that individuals do not know what the game includes, in terms of accessibility, through no fault of their own this is due to the simple fact that game cases do not display the accessibility features anywhere on it. \cite {bierre2005game}. Due to the neglect made towards gamers with disabilities over the years the games industry has grown apathetic and as a result the games being produced have not been adequately influenced by accessibility standards.\cite{porter2013empirical}
 
-* Engineering for Accessibility
-* Engineering for Portability
-* Engineering for Localisation
-* Specialist Algorithms and their Integration into Game Architectures
-
-Please ensure that you reference appropirate academic literature and ensure that the discussion incorporates appropriate reference to key engineering principles and practices. Apply what you have learned into your collaborative game.
