@@ -11,7 +11,7 @@
 \usepackage{amsmath}
 
 % Please include a clear, concise, and descriptive title
-\title{What types of games are people playing or not playing as a result of accessibility?}
+\title{How can game developers accomodate for people with hard of hearing?}
 
 % Please do not change the subtitle
 \subtitle{COMP160 - Software Engineering Essay}
@@ -23,14 +23,21 @@
 
 \maketitle
 
-\abstract{Please include an abstract of at most 100 words (these do not count towards your word count).}
-The gaming industry attracts more and more people everyday with special needs, so the game developers need to compensate for the ever increasing numbers of the diverse audience it caters to, this paper aims to address these issues and bring them to light. The industry has been successful in appealing to fans of the sports genre and education to help the academically challenged people with 'wii sports' and 'brain age' respectively. So where are the games that aid others with more severe mental disabilities.
+\abstract
+The gaming industry attracts more and more people everyday with special needs, so the game developers need to compensate for the ever increasing numbers of the diverse audience it caters to, this paper aims to address the issues a person with a hearing impairment may face when gaming and bring them to light. The industry has been successful in appealing to fans of the sports genre and education to help the academically challenged people with 'wii sports' and 'brain age' respectively. So which games already help the hard of hearing and what can game developers learn from these games?
 
-\section{Proposal}
-The demand for software which is accessible by members of the public suffering with mental impairments has been on the rise and since June 2001 under section 508 of the Rehabilitation act \cite{cohen2005accessibility} agencies in America have been obliged to offer aids to the people to allow them to access information which others are also able to access. Over one in five adults suffer from some sort of disability, both mental and physical, worldwide \cite{sierkowski2002achieving} which would mean ignoring this issue would effectively be discarding 20 percent of the potential market which for any reasonable developer is too big a margin to ignore.  Another issue which doesn't help the matter is that individuals do not know what the game includes, in terms of accessibility, through no fault of their own this is due to the simple fact that game cases do not display the accessibility features anywhere on it. \cite {bierre2005game}. Due to the neglect made towards gamers with disabilities over the years the games industry has grown apathetic and as a result the games being produced have not been adequately influenced by accessibility standards.\cite{porter2013empirical}
+\section{Introduction}
+The demand for software which is accessible by members of the public suffering with mental and physical impairments has been on the rise and since June 2001 under section 508 of the Rehabilitation act \cite{cohen2005accessibility} agencies in America have been obliged to offer aids to the people to allow them to access information which others are also able to access. Over one in five adults suffer from some sort of disability, both mental and physical, worldwide \cite{sierkowski2002achieving} which would mean ignoring this issue would effectively be discarding 20 percent of the potential market which for any reasonable developer is too big a margin to ignore.  Another issue which doesn't help the matter is that individuals do not know what the game includes, in terms of accessibility, through no fault of their own this is due to the simple fact that game cases do not display the accessibility features anywhere on it. \cite {bierre2005game}. Due to the neglect made towards gamers with disabilities over the years the games industry has grown apathetic and as a result the games being produced have not been adequately influenced by accessibility standards.\cite{porter2013empirical}
 
+\section{Pre-existing accessibility}
+Accessibility features can either be gameplay changes which then require the structure of the software to be altered, or vice versa. An example of where the code and underlying mechanics of the game is built around the accessibility of the gameplay is if the visuals of the game were to alter based on the audio side of the game. This can be seen in games where music dictates the gameplay, examples are: Beat Hazard, Symphony and Audio Surf. Since studies show that deaf people can 'feel' noises \cite {Nanayakkara} why shouldn't it be possible for deaf people to interpret noise from visual stimuli, which some game developers are already testing on children to improve their timing  \cite {Jouhtimak}. In addition to this, there has been research into whether comprehensive testing for younger children with hearing difficulties could be scrapped in favour of alternative examination methods \cite {Mich} this could pave the way for a a brand new market being opened in the gaming indsutry specifically for children in education who suffer from hearing difficulties.
+
+\section{Structural accessibility}
+All accessibility features of games required a line of code for them to operate, in this section I will be covering how different features are designed for deaf people.
+Typically the first port of call for a deaf or hard of hearing individual viewing anything is to try and turn the subtitles on which produces a line of words at the bottom center of the screen in the game window. For this to occur there first needs to be a script for the whole game which can be called by a function in the code.
 
 \bibliographystyle{ieeetran}
 \bibliography{references}
+
 
 \end{document}
