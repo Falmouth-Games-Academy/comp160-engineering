@@ -18,7 +18,7 @@ What main practices should a programmer follow in order to develop a game using 
 
 Portability has been an issue in the games industry for some time now. Many games developed for consoles have had performance and graphical issues when ported to PC or vice versa. With today's technology game engines like the Unreal engine are providing ways to make portability less of an nuisance. Programmers often make the same avoidable mistakes when programming games that makes the game harder to port later on in development. This paper will cover some of these mistakes and provide practices that programmers can follow to prevent them from happening.
 
-Research will be conducted on software portability in general and then related back to the games industry. In robotics software has to be developed to work with multiple systems frequently. This paper will look into how they achieve this and weather similar techniques can be used for making portable games. When it comes to performance getting the most out of the hardware is the goal so porting in such a way to take advantage of the hardware is essential.
+Research will be conducted on software portability in general and then related back to the games industry. In robotics software has to be developed to work with multiple systems frequently. This paper will look into how they achieve this and whether similar techniques can be used for making portable games. When it comes to performance getting the most out of the hardware is the goal so porting in such a way to take advantage of the hardware is essential.
 
 ## References
 
