@@ -17,7 +17,7 @@
 \subtitle{COMP160 - Software Engineering Essay}
 
 % Please put your student number in the author field
-\author{DO NOT WRITE YOUR NAME\\Put your student number (on your ID card) here}
+\author{1608305}
 
 \begin{document}
 
@@ -27,17 +27,37 @@
 
 \section{Introduction}
 
-Write your introduction here. A brief introduction is recommended, which should outline key details of the chosen topic and the reviewed papers, motivate the work, and provide a roadmap of key points to the reader. The motivation is quite important here, as essays should have a contribution (i.e., what is the point of the essay, and what does the reader take away from the essay) and the link between the motivation (in the introduction) and the contribution (in the conclusion) should be made clear.
+Recently in the games industry there have been disconcert over games that have been ported from consoles to PC. The console version works as expected but the PC versions suffer big performance losses and restrictions such as frame rate caps. This paper will be looking into why this is happening and what actions developers can take to stop this happening with future ports. The research conducted for this paper will be looking into techniques used for producing portable code and the difficulties with developing it.  
 
-\section{Your section title here}
+\section{In computing}
 
-Write the main body of your essay here. Add more sections if appropriate. You may choose to write about each of your three papers in its own section, or you may choose a different structure. Either way, remember that you are being assessed on technical insight and analysis: it is not enough to merely summarise the contents of the three papers. You must demonstrate the ability to make inferences beyond what is written in the papers, and to draw the three papers together into a single coherent narrative.
+Porting software to work on different hardware is common practice in computing. The process is used in many fields of computing one of the biggest being robotics. \cite{6840132}\cite{1438043} During the design process portability and maintainability should be a big factor to be considered. \cite{7087005}\cite{7000937} Modular designs and flexible architecture techniques can be used to make porting the software later much more painless. \cite{885610} Other techniques like abstracting the functionality and then adding to it has proven to be one way of making highly portable software. \cite{56301} If the program has been made using an abstract model of computation it can then be mapped to different systems by attaching annotations. \cite{180499} This is especially useful with multicore processor systems as it helps to get the most out of the cores.
+\newline
+\newline
+Some common pitfalls with portable software design is using language extensions, although these may work on one system they are painfully nonportable.\cite{1225867} When developing for one system in mind then language extensions can make life easier but if considering porting then avoiding any language extensions will help in the long term.
 
-Your essay must make a clear recommendation, in terms of which of the three techniques you have reviewed is the best according to whichever metric or metrics you feel is most appropriate. You must justify your choice, backing it up with empirical evidence. However remember that an academic essay is not a murder mystery: you should already have briefly discussed your recommendation in the introduction and in other parts of the essay. Do not save it for a grand reveal at the end.
+
+\section{In games industry}
+
+In the games industry games are often developed for consoles first as that is usually where the biggest market is. This means the games are optimized to work best on these specific systems. Many games have been designed with portability in mind so porting them isn’t such a big task. But when a development company initially only had plans for a console release then porting to a PC can become quite the task. When developing specifically for console programmers can be lazy and use work arounds that work on the hardware they are developing for but not for others.
+\newline
+\newline
+Using tick update every frame and locking the frames to a certain amount is an example of this. it works fine on the console but when you run the same software on a pc that is capable of much higher frame-rates it must also lock at the same amount or it will break the game.
+\newline
+\newline
+Hardware goes out of date relatively fast but developers will stay developing for the hardware for a long time. \cite{7000937} This is especially true for the games industry where the hardware in consoles becomes outdated rapidly but developers are still developing for them ten years after their release. The old technology means that sometimes developers will cut corners for their games to have favourable performance. ‘Architectural differences often require different programming styles and performance optimization techniques’. \cite{6808160} Using programming styles that differ from normal programming standards can make software substantially harder to port. \cite{766635} Keeping to normal programming standards and having maintainable code is key when thinking about porting a game.
+
 
 \section{Conclusion}
 
-Write your conclusion here. The conclusion should do more than summarise the essay, making clear the contribution of the work and highlighting key points, limitations, and outstanding questions. It should not introduce any new content or information.
+The developers that have had the most trouble with porting their games are the ones that initially designed their games without portability in mind. Games that have been successful on one platform but ported to another as an afterthought are the ones that have the most problems. First time developing for a different platform proves to cause a lot of developer’s problems for these reasons. 
+\newline
+\newline
+When a game hasn’t been designed with porting in mind developers can still produce a good port but it will be likely to take much longer. The problem with some developers is that they have not given enough time or funding for the port to be made to a good quality.
+\newline
+\newline
+Steam’s new refund system should help eliminate bad ports with users now able to refund games easily when they are not up to standard making it harder for developers to make money from poor quality products.
+
 
 \bibliographystyle{ieeetran}
 \bibliography{references}
