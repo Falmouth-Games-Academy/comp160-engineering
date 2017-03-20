@@ -37,21 +37,17 @@ Rethinking the obvious: Two cases on how ethnographic research enhances new prod
 Experimental designs for cross-cultural interactions: A case study on affective body movements for HRI
 - Possible cultural interaction link between HRI and UI
 
-8 http://smallbusiness.chron.com/ethnographic-research-marketing-25205.html
-What Is Ethnographic Research Marketing?
-- Describing ethnographic marketing
-
-9 http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/6062263/
+8 http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/6062263/
 Using ethnographic methods in software engineering research
 
 
 Focus groups...
-10 http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/7496677/
+9 http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/7496677/
 Elementary school desk and chair design based on focus group discussion
 - Points under data collecting about how to conduct a focus group
 
-11 http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/7798082/
+10 http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/7798082/
 Complementing a Delphi exercise with a focus group session
 
-12 http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/7412842/
+11 http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/7412842/
 What is Life—in Everyday Understanding? A Focus Group Study on Lay Perspectives on the Term Life
