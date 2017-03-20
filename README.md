@@ -31,3 +31,5 @@ __During the software development process what precautions can we think about fo
 [LISA & GALA Industry Standards](https://www.gala-global.org/resources/industry-standards)
 
 [Developing and delivering a software internationalisation subject](http://dl.acm.org.ezproxy.falmouth.ac.uk/citation.cfm?id=976472&CFID=727982352&CFTOKEN=92133112)
+
+[CD Projekt Red](https://www.vg247.com/2017/03/20/the-witcher-devs-started-out-as-passionate-gamers-who-had-no-clue-how-to-make-games/)
