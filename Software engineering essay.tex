@@ -5,13 +5,14 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[none]{hyphenat}
 \usepackage{setspace}
+\usepackage{graphicx}
 \doublespace
 
 % You may add additional packages here
 \usepackage{amsmath}
 
 % Please include a clear, concise, and descriptive title
-\title{Are behavior trees effective or necessary to AI programming in the game industry?}
+\title{What are the advantages and disadvantages to using behavior trees in simple NPC character programming for digital games?}
 
 % Please do not change the subtitle
 \subtitle{COMP160 - Software Engineering Essay}
@@ -23,21 +24,21 @@
 
 \maketitle
 
-\abstract{This paper discusses whether the use of behaviour trees in AI programming are essential or easier than using coding or blueprints for games, first there will be a brief introduction of behaviour trees, what they are mainly used for in programming. Then a comparison of behaviour trees and blueprint of which the AI behaviour outcomes are the same, concentrating on how fast it was to produce, how easily features can be added/ removed and which method has a simpler structure which could improve how quickly another individual could read and understand what the programming does to the AI.}
+\abstract{This paper discusses the advantages and disadvantages of using behavior trees for managing simple NPC character AI behavior. First there will be an introduction of behavior trees, what the main structural features are and what they do, also how a game engine would run the behavior tree, using diagrams as examples and help explain some features. The paper then names the advantages and disadvantages of using behavior trees for AI character behavior.}
 
 \section{Introduction}
 
-One of the deciding factors on how well a game is rated is the behaviours of the AIs within the game, their movement and senses have to be realistic, e.g. if the AI enemy is supposed to detect the player with sight, it would be wrong for the player to be detected through a wall. Therefore programming the AI character is one of the most important parts of producing a game and should be simplified as much as possible, unfortunately  there are many different ways to programme an AI, of which behaviour trees is one of the most recent methods, this paper will compare AI programming using behaviour trees to different methods of programming such as blueprints, in different types of games, to find out if behaviour trees are easier to create/ use with AI control.
+One of the deciding factors on how well a game is rated is the behavior of the NPC characters AI within the game, their movement and senses have to be realistic\cite{dey2013ql}, e.g. if the NPC enemy is supposed to detect the player with sight, it would be wrong for the player to be detected through a wall. Therefore programming an NPC character is one of the most important parts of producing a game\cite{buckland2005programming} and should be simplified as much as possible, unfortunately there are many different ways to programme an AI controlled character, of which behavior trees is one of the most recent methods\cite{GDCVault}, this paper will look into the advantages and disadvantages of simple NPC character programming using behavior trees. The conclusion will discuss whether other AI behavior programming methods would have less disadvantages for example visual node-based scripting language.
 
 \section{What are behaviour trees?}
 
-Write the main body of your essay here. Add more sections if appropriate. You may choose to write about each of your three papers in its own section, or you may choose a different structure. Either way, remember that you are being assessed on technical insight and analysis: it is not enough to merely summarise the contents of the three papers. You must demonstrate the ability to make inferences beyond what is written in the papers, and to draw the three papers together into a single coherent narrative.
-
-Your essay must make a clear recommendation, in terms of which of the three techniques you have reviewed is the best according to whichever metric or metrics you feel is most appropriate. You must justify your choice, backing it up with empirical evidence. However remember that an academic essay is not a murder mystery: you should already have briefly discussed your recommendation in the introduction and in other parts of the essay. Do not save it for a grand reveal at the end.
+Rahul Dey and Chris Child state that behavior trees (BT) were created as a more intuitive revision of a finite state machine\cite{dey2013ql}, a brief description of a final state machine is a number of states that require an input to transition to another state which may result in an output or action\cite{buckland2005programming}. The behavior tree has 5 main node types\cite{gamasutra} (depending what engine the BT is built in there could be many structural components); leaves, branches, composite, decorator and root.
+A BT starts with a root, it has no parent which means there is nothing before the root, and it gets called when the NPC first spawns and when a behaviour has ended which starts the BT loop over.
+Leaves are the actual actions or behavior that the NPC exhibits in game they have no child which means after their action is completed the BT is started at the root again\cite{marzinotto2014towards}.
 
 \section{Conclusion}
 
-Write your conclusion here. The conclusion should do more than summarise the essay, making clear the contribution of the work and highlighting key points, limitations, and outstanding questions. It should not introduce any new content or information. \cite{GDCVault} \cite{youtube} \cite{UE4} \cite{nicolau2016evolutionary} \cite{nareyek2004ai}
+Write your conclusion here. The conclusion should do more than summarise the essay, making clear the contribution of the work and highlighting key points, limitations, and outstanding questions. It should not introduce any new content or information. \cite{youtube} \cite{UE4} \cite{nicolau2016evolutionary} \cite{nareyek2004ai} 
 
 \bibliographystyle{ieeetran}
 \bibliography{references1}
