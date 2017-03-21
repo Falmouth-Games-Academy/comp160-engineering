@@ -12,4 +12,4 @@ Please ensure that you reference appropirate academic literature and ensure that
 
 ## References
 
-[Video gaming accessibility](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7272966)
+[Video gaming accessibility](http://ieeexplore.ieee.org/document/7272966/)
