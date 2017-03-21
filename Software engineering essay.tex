@@ -32,9 +32,9 @@ One of the deciding factors on how well a game is rated is the behavior of the N
 
 \section{What are behaviour trees?}
 
-Rahul Dey and Chris Child state that behavior trees (BT) were created as a more intuitive revision of a finite state machine\cite{dey2013ql}, a brief description of a final state machine is a number of states that require an input to transition to another state which may result in an output or action\cite{buckland2005programming}. BTs improve on finite state machines by using hierarchical system which gives better control over AI behavior, the basic structure consists of 4 main node types\cite{gamasutra}; leaves, composite, decorator and root.
+Rahul Dey and Chris Child state that behavior trees (BT) were created as a more intuitive revision of a finite state machine\cite{dey2013ql}, a brief description of a final state machine is a number of states that require an input to transition to another state which may result in an output or action\cite{buckland2005programming}. BTs improve on finite state machines by using hierarchical system which gives better control over AI behavior, the basic structure consists of 4 main node types\cite{gamasutra}; leaves, composite, decorator and root. When the BT is called it runs through the nodes from left to right, therefore the higher priority nodes are placed on the left which means they will be checked to see if they are able to run first, if the higher priorities cannot be run the BT will start again but going to the next node to the right of the previous explored branch.
 
-A BT starts with a root, it has no parent which means there is nothing before the root, when the BT is called it runs through the nodes from left to right, therefore the higher priority nodes are placed on the left which means they will be checked to see if they are able to run first, if the higher priorities cannot be run the root will start again but going to the next node to the right of the previous, but still directly attached to the root.
+A BT starts with a root, it has no parent which means there is nothing before the root and there can only be one, nodes are attached to each other and the root via branches this is how the BT knows which node is next to be explored.
 
 Composite nodes
 
