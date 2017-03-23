@@ -12,7 +12,7 @@
 \usepackage{amsmath}
 
 % Please include a clear, concise, and descriptive title
-\title{What are the advantages and disadvantages to using behavior trees in simple NPC character programming for digital games?}
+\title{What are the advantages and disadvantages to using behavior trees in simple NPC programming for digital games?}
 
 % Please do not change the subtitle
 \subtitle{COMP160 - Software Engineering Essay}
@@ -24,23 +24,41 @@
 
 \maketitle
 
-\abstract{This paper discusses the advantages and disadvantages of using behavior trees for managing simple NPC character AI behavior. First there will be an introduction of behavior trees, what the main structural features are and what they do, also how a game engine would run the behavior tree, using diagrams as examples and help explain some features. The paper then names the advantages and disadvantages of using behavior trees for AI character behavior.}
+\abstract{This paper discusses the advantages and disadvantages of using behavior trees for managing simple NPC AI behavior. First there will be an introduction of behavior trees, what the main structural features are and what they do, also how a game engine would run the behavior tree, using diagrams as examples and help explain some features. The paper then names the advantages and disadvantages of using behavior trees for AI character behavior.}
 
 \section{Introduction}
 
-One of the deciding factors on how well a game is rated is the behavior of the NPC characters AI within the game, their movement and senses have to be realistic\cite{dey2013ql}, e.g. if the NPC enemy is supposed to detect the player with sight, it would be wrong for the player to be detected through a wall. Therefore programming an NPC character is one of the most important parts of producing a game\cite{buckland2005programming} and should be simplified as much as possible, unfortunately there are many different ways to programme an AI controlled character, of which behavior trees is one of the most recent methods\cite{GDCVault}, this paper will look into the advantages and disadvantages of simple NPC character programming using behavior trees. The conclusion will discuss whether other AI behavior programming methods would have less disadvantages for example visual node-based scripting language.
+One of the deciding factors on how well a game is rated is the behavior of the NPC AI within the game, their movement and senses have to be realistic\cite{dey2013ql}, e.g. if the NPC enemy is supposed to detect the player with sight, it would be wrong for the player to be detected through a wall. Therefore programming an NPC is one of the most important parts of producing a game\cite{buckland2005programming} and should be simplified as much as possible, unfortunately there are many different ways to programme an AI controlled character, of which behavior trees is one of the most recent methods\cite{GDCVault}, this paper will look into the advantages and disadvantages of simple NPC programming using behavior trees. The conclusion will discuss whether other AI behavior programming methods would have less disadvantages for example visual node-based scripting language.
 
 \section{What are behaviour trees?}
 
-Rahul Dey and Chris Child state that behavior trees (BT) were created as a more intuitive revision of a finite state machine\cite{dey2013ql}, a brief description of a final state machine is a number of states that require an input to transition to another state which may result in an output or action\cite{buckland2005programming}. BTs improve on finite state machines by using hierarchical system which gives better control over AI behavior, the basic structure consists of 4 main node types\cite{gamasutra}; leaves, composite, decorator and root. When the BT is called it runs through the nodes from left to right, therefore the higher priority nodes are placed on the left which means they will be checked to see if they are able to run first, if the higher priorities cannot be run the BT will start again but going to the next node to the right of the previous explored branch.
+Rahul Dey and Chris Child state that behavior trees (BT) were created as a more intuitive revision of a finite state machine\cite{dey2013ql}, a brief description of a final state machine is a number of states that require an input to transition to another state which may result in an output or action\cite{buckland2005programming}. BTs improve on finite state machines by using hierarchical system which gives better control over AI behavior, the basic structure consists of 4 main node types\cite{gamasutra}; leaves, composite, decorator and root. When the BT is called it runs through the nodes from left to right, therefore the higher priority nodes are placed on the left which means they will be checked to see if they are able to run first, if the higher priorities cannot be run the BT will start again but going to the next node to the right of the previous explored branch. 
 
-A BT starts with a root, it has no parent which means there is nothing before the root and there can only be one, nodes are attached to each other and the root via branches this is how the BT knows which node is next to be explored.
+\subsection{Root}
 
-Composite nodes
+A BT starts with a root, it has no parent which means there is nothing before the root, there can only be one root per tree and the root can have one or more children, which means the nodes that the root feeds into. Nodes are attached to each other and the root via branches this is how the BT knows which node is next to be explored. (Depending on which game engine you build a BT in could change how nodes are placed and what they do.)
 
-Decorator nodes
+\subsection{Composite}
+
+Composite nodes can have one or more children and the main responsibility is to depict how the branch will be run. There are three types of composite nodes. 
+
+Selector (sometimes called Priority): Returns success or failure depending on the children's states, it will succeed if one or more child has succeeded and fail if all children have failed.
+
+Sequence: If one of its children fails the sequence node returns as failed.
+
+parallel: Instead of checking its children on after another parallel runs all children at the same time.
+
+\subsection{Decorator}
+
+Decorator nodes only have one child, and the main purpose of a decorator is to manipulate the child's result, this could mean if the child succeeds the decorator says that it failed or repeat the child a certain number of times.
+
+\subsection{Leaf}
 
 Leaves are the actual actions or behavior that the NPC exhibits in game they have no child which means after their action is completed the BT is started at the root again\cite{marzinotto2014towards}.
+
+\section{Advantages of behavior trees}
+
+\section{Behavior tree disadvantages}
 
 \section{Conclusion}
 
