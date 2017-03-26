@@ -29,6 +29,7 @@ Please ensure that you reference appropirate academic literature and ensure that
 [Playmancer: Games for health with accessibility in mind](https://www.researchgate.net/publication/46532710_PlayMancer_Games_for_Health_with_Accessibility_in_Mind)
 
 [Analyzing the Use of Sounds in FPS games and its Impact for Hearing Impaired Users](http://homepages.dcc.ufmg.br/~chaimo/public/SBGames12-denise.pdf)
+
 "The focus of our research was the impact of the use of audio in FPS games for hearing impaired users. Thus, in order to select the games to be inspected we took into consideration whether they offered audio, as well as other representations, such as closed captions or visual redundancies, that would allow hearing impaired users to play the game."
 
 [Teaching Programming to the Deaf](http://www.catea.gatech.edu/scitrain/kb/FullText_Articles/Ross.pdf)
