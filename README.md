@@ -32,6 +32,8 @@ Please ensure that you reference appropirate academic literature and ensure that
 
 * "The focus of our research was the impact of the use of audio in FPS games for hearing impaired users. Thus, in order to select the games to be inspected we took into consideration whether they offered audio, as well as other representations, such as closed captions or visual redundancies, that would allow hearing impaired users to play the game."
 
+* "The classes represent the existent types of audio signs in FPS games. The strategies on the other hand, describe how the classes are used to convey information in the game."
+
 [Teaching Programming to the Deaf](http://www.catea.gatech.edu/scitrain/kb/FullText_Articles/Ross.pdf)
 
 [Evaluation of Software Tools with Deaf Children](https://i3.fbk.eu/files/assetts2009.pdf)
