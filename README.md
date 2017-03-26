@@ -34,3 +34,18 @@ Please ensure that you reference appropirate academic literature and ensure that
 
 [Evaluation of Software Tools with Deaf Children](https://i3.fbk.eu/files/assetts2009.pdf)
 
+* Provides list of guidelines for when evaluating deaf children:
+
+1. Organize the test session in public spaces, e.g., schools.
+2. Tests should be carried out with a group of children.
+3. No more than thirty minutes long.
+4. No parents present.
+5. Provide instructions both orally and with sign language.
+6. If written instruction are necessary, pay attention to the
+ language used
+ After giving instructions to the child, ask her/him to
+ repeat them (deaf children often say to have understood
+ even if it is not, they teachers affirm).
+8. At the end of the test, ask children about their
+ impressions.
+
