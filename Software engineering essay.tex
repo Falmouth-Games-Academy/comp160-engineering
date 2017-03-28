@@ -24,15 +24,15 @@
 
 \maketitle
 
-\abstract{This paper discusses the advantages and disadvantages of using behavior trees for managing simple NPC AI behavior. First there will be an introduction of behavior trees, what the main structural features are and what they do, also how a game engine would run the behavior tree, using diagrams as examples and help explain some features. The paper then names the advantages and disadvantages of using behavior trees for AI character behavior.}
+\abstract{This paper discusses the advantages and disadvantages of using behavior trees for managing simple NPC AI behavior. First there will be an introduction of behavior trees, what the main structural features are and what they do, also how a game engine would run the behavior tree. The paper then names the advantages and disadvantages of using behavior trees for AI character behavior compared to other AI NPC programming methods}
 
 \section{Introduction}
 
-One of the deciding factors on how well a game is rated is the behavior of the NPC AI within the game, their movement and senses have to be realistic\cite{dey2013ql}, e.g. if the NPC enemy is supposed to detect the player with sight, it would be wrong for the player to be detected through a wall. Therefore programming an NPC is one of the most important parts of producing a game\cite{buckland2005programming} and should be simplified as much as possible, unfortunately there are many different ways to programme an AI controlled character, of which behavior trees is one of the most recent methods\cite{GDCVault}, this paper will look into the advantages and disadvantages of simple NPC programming using behavior trees. The conclusion will discuss whether other AI behavior programming methods would have less disadvantages for example visual node-based scripting language.
+One of the deciding factors on how well a game is rated is the behaviour of the NPC AI within the game, their movement and senses have to be realistic\cite{dey2013ql}, e.g. if the NPC enemy is supposed to detect the player with sight, it would be wrong for the player to be detected through a wall. Therefore programming an NPC is one of the most important parts of producing a game\cite{buckland2005programming} and should be simplified as much as possible, unfortunately there are many different ways to programme an AI controlled character, of which behaviour trees is one of the most recent methods\cite{GDCVault}, this paper will look into the advantages and disadvantages of simple NPC programming using behaviour trees. The conclusion will discuss whether the advantages of behaviour trees outweigh the disadvantages and the future of NPC AI programming.
 
 \section{What are behaviour trees?}
 
-Rahul Dey and Chris Child state that behavior trees (BT) were created as a more intuitive revision of a finite state machine\cite{dey2013ql}, a brief description of a final state machine is a number of states that require an input to transition to another state which may result in an output or action\cite{buckland2005programming}. BTs improve on finite state machines by using hierarchical system which gives better control over AI behavior, the basic structure consists of 4 main node types\cite{gamasutra}; leaves, composite, decorator and root. When the BT is called it runs through the nodes from left to right, therefore the higher priority nodes are placed on the left which means they will be checked to see if they are able to run first, if the higher priorities cannot be run the BT will start again but going to the next node to the right of the previous explored branch. 
+Rahul Dey and Chris Child state that behaviour trees (BT) were created as a more intuitive revision of a finite state machine\cite{dey2013ql}, and are actually a form of hierarchical state machine. A brief description of a final state machine is a number of states that require an input to transition to another state which may result in an output or action\cite{buckland2005programming}. BTs improve on finite state machines by using hierarchical system which gives better control over AI behaviour, the basic structure consists of 4 main node types\cite{gamasutra}; leaves, composite, decorator and root. When the BT is called it runs through the nodes from left to right, therefore the higher priority nodes are placed on the left which means they will be checked to see if they are able to run first, if the higher priorities cannot be run the BT will start again but going to the next node to the right of the previous explored branch.
 
 \subsection{Root}
 
@@ -42,7 +42,7 @@ A BT starts with a root, it has no parent which means there is nothing before th
 
 Composite nodes can have one or more children and the main responsibility is to depict how the branch will be run. There are three types of composite nodes. 
 
-Selector (sometimes called Priority): Returns success or failure depending on the children's states, it will succeed if one or more child has succeeded and fail if all children have failed.
+Selector (sometimes called Priority): Returns success or failure depending on the children's states, it will succeed if one or more child has succeeded and fail if all children have failed\cite{UE4}.
 
 Sequence: If one of its children fails the sequence node returns as failed.
 
@@ -54,17 +54,31 @@ Decorator nodes only have one child, and the main purpose of a decorator is to m
 
 \subsection{Leaf}
 
-Leaves are the actual actions or behavior that the NPC exhibits in game they have no child which means after their action is completed the BT is started at the root again\cite{marzinotto2014towards}.
+Leaves are the actual actions or behaviour that the NPC exhibits in game they have no child which means after their action is completed the BT is started at the root again\cite{marzinotto2014towards}.
 
 \section{Advantages of behavior trees}
 
+BTs are considered to have better modularity compared to other NPC programming methods, all the nodes can be synchronised inside the same BT and each node is responsible for one aspect of the behaviour function\cite{colledanchise2015learning}. The advantage of the BT structure is that the design created uses functional requirements, this very significantly reduces the complexity and time of the layout process and which means the time spent making any changes can be greatly reduced when using BTs for NPC AI behaviour\cite{dromey2003requirements}, other programming techniques e.g. node based scripting language can take many hours to organise each node to create the best readable layout, depending on how many nodes are used in the NPC behaviour. Large BT can be split into smaller trees which can be easier to understand and expand upon\cite{marzinotto2014towards}. BTs have the ability to run nodes at the same time as others, this is something the finite state machine programming is not capable of but by can be possible if a BT is used along side the finite state machine using a parallel node\cite{SCIRRA}. BTs have the benefit of being available to use in many game engines, which means with a reasonable amount of knowledge of BTs an individual programming AI behaviour would be able to use different game engines with not a great amount of difficulty.
+
 \section{Behavior tree disadvantages}
+
+\begin{itemize}
+
+\item A large amount of nodes arranged in big groups within a single BT quickly becomes unmanageable and when split into smaller manageable BT it is not immediately obvious how to get the two or more trees to communicate\cite{dromey2003requirements} and can often be quite difficult\cite{hmc}.
+\item Most nodes within the BT have the ability to have two parents which can make the structure much harder to read\cite{marzinotto2014towards}
+\item Bugs can be hard to find/ fix as BT get larger and more complicated\cite{GDCVault}
+\item BTs can become quite detailed and much larger than can be used in a game
+\item In newer games, studios are starting to want more detailed AI that makes more realistic decisions to limited environmental information which BTs just can't deliver as the method gets older\cite{Gama}.
+
 
 \section{Conclusion}
 
- \cite{youtube} \cite{UE4} \cite{nicolau2016evolutionary} \cite{nareyek2004ai} 
+Utility AI is starting to take over from behaviour trees \cite{Gama}
+
+ \cite{youtube} \cite{nicolau2016evolutionary} \cite{nareyek2004ai} 
 
 \bibliographystyle{ieeetran}
 \bibliography{references1}
 
+\end{itemize}
 \end{document}
