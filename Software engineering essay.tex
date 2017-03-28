@@ -1,0 +1,74 @@
+% Please do not change the document class
+\documentclass{scrartcl}
+
+% Please do not change these packages
+\usepackage[hidelinks]{hyperref}
+\usepackage[none]{hyphenat}
+\usepackage{setspace}
+\usepackage{graphicx}
+\doublespace
+
+% You may add additional packages here
+\usepackage{amsmath}
+
+% Please include a clear, concise, and descriptive title
+\title{What are the advantages and disadvantages to using behavior trees in simple NPC programming for digital games?}
+
+% Please do not change the subtitle
+\subtitle{COMP160 - Software Engineering Essay}
+
+% Please put your student number in the author field
+\author{1506919}
+
+\begin{document}
+
+\maketitle
+
+\abstract{This paper discusses the advantages and disadvantages of using behavior trees for managing simple NPC AI behavior. First there will be an introduction of behavior trees, what the main structural features are and what they do, also how a game engine would run the behavior tree. The paper then names the advantages and disadvantages of using behavior trees for AI character behavior compared to other AI NPC programming methods}
+
+\section{Introduction}
+
+One of the deciding factors on how well a game is rated is the behaviour of the NPC AI within the game, their movement and senses have to be realistic\cite{dey2013ql}, e.g. if the NPC enemy is supposed to detect the player with sight, it would be wrong for the player to be detected through a wall. Therefore programming an NPC is one of the most important parts of producing a game\cite{buckland2005programming} and should be simplified as much as possible, unfortunately there are many different ways to programme an AI controlled character, of which behaviour trees is one of the most recent methods\cite{GDCVault}, this paper will look into the advantages and disadvantages of simple NPC programming using behaviour trees. The conclusion will discuss whether the advantages of behaviour trees outweigh the disadvantages and the future of NPC AI programming.
+
+\section{What are behaviour trees?}
+
+Rahul Dey and Chris Child state that behaviour trees (BT) were created as a more intuitive revision of a finite state machine\cite{dey2013ql}, and are actually a form of hierarchical state machine. A brief description of a final state machine is a number of states that require an input to transition to another state which may result in an output or action\cite{buckland2005programming}. BTs improve on finite state machines by using hierarchical system which gives better control over AI behaviour, the basic structure consists of 4 main node types\cite{gamasutra}; leaves, composite, decorator and root. When the BT is called it runs through the nodes from left to right, therefore the higher priority nodes are placed on the left which means they will be checked to see if they are able to run first, if the higher priorities cannot be run the BT will start again but going to the next node to the right of the previous explored branch\cite{youtube}.
+
+\subsection{Root}
+
+A BT starts with a root, it has no parent which means there is nothing before the root, there can only be one root per tree and the root can have one or more children, which means the nodes that the root feeds into. Nodes are attached to each other and the root via branches this is how the BT knows which node is next to be explored. (Depending on which game engine you build a BT in could change how nodes are placed and what they do.)
+
+\subsection{Composite}
+
+Composite nodes can have one or more children and the main responsibility is to depict how the branch will be run. There are three types of composite nodes. 
+
+Selector (sometimes called Priority): Returns success or failure depending on the children's states, it will succeed if one or more child has succeeded and fail if all children have failed\cite{UE4}.
+
+Sequence: If one of its children fails the sequence node returns as failed.
+
+parallel: Instead of checking its children on after another parallel runs all children at the same time.
+
+\subsection{Decorator}
+
+Decorator nodes only have one child, and the main purpose of a decorator is to manipulate the child's result, this could mean if the child succeeds the decorator says that it failed or repeat the child a certain number of times.
+
+\subsection{Leaf}
+
+Leaves are the actual actions or behaviour that the NPC exhibits in game they have no child which means after their action is completed the BT is started at the root again\cite{marzinotto2014towards}.
+
+\section{Advantages of behavior trees}
+
+BTs are considered to have better modularity compared to other NPC programming methods, all the nodes can be synchronised inside the same BT and each node is responsible for one aspect of the behaviour function\cite{colledanchise2015learning}. The advantage of the BT structure is that the design created uses functional requirements, this very significantly reduces the complexity and time of the layout process and which means the time spent making any changes can be greatly reduced when using BTs for NPC AI behaviour\cite{dromey2003requirements}, other programming techniques e.g. node based scripting language can take many hours to organise each node to create the best readable layout, depending on how many nodes are used in the behaviour. Large BT can be split into smaller trees which can be easier to understand and expand upon\cite{marzinotto2014towards} and have the ability to run nodes at the same time as others, this is something the finite state machine programming is not capable of but by can be possible if a BT is used along side the finite state machine using a parallel node\cite{SCIRRA}
+
+\section{Behavior tree disadvantages}
+
+A large amount of nodes arranged in big groups within a single BT quickly becomes unmanageable and when split into smaller manageable trees it is not immediately obvious how to get the two or more to communicate\cite{dromey2003requirements} and can often be quite difficult\cite{hmc}. Most nodes within the BT have the ability to have two parents which can make programming easier but the structure becomes much harder to read\cite{marzinotto2014towards}, and as the BT get larger and more complicated bugs can be hard to find or fix\cite{GDCVault}, in fact BTs can become quite detailed and much larger than can be used in a game which requires time spent to scale down and unessessary branches. In newer games, studios are starting to want more detailed AI that makes more realistic decisions to limited environmental information which BTs hard coded behaviours just can't deliver as the method gets older\cite{Gama}.
+
+\section{Conclusion}
+
+In conclusion BTs are still a very popular method for NPC AI behaviour eventhough it has many disadvantages it is still better than the much older methods of programming such as finite state machines, as technology and games get better AI programming for NPC behaviour must adapt, and become more tailored to different NPCs, become more realistic. In the future AI programming for NPC behaviour will be created using another system even now Utility-based AI programming is starting to increase in popularity as a replacement for BT\cite{Gama}. Utility-based AI programming is less hard coded, there is no definate output to an input, but several potential behavioural output are considered and depending on the what is happening in the surrounding environment chooses the most appropreiate for that time\cite{othman2014implementing}.
+
+\bibliographystyle{ieeetran}
+\bibliography{references1}
+
+\end{document}
