@@ -22,6 +22,8 @@ Please ensure that you reference appropirate academic literature and ensure that
 
 [Evaluating and Investigating Game Accessibility for Deaf Players with the Semiotic Inspection Method](http://gur.hcigames.com/wp-content/uploads/2015/02/Evaluating-and-Investigating-Game-Accessibility-for-Deaf-Players-with-the-Semiotic-Inspection-Method.pdf)
 
+* "After the identification of auditory signs, we grouped those with similar properties into classes that represented what features of the sound effects were used to convey information, like volume, timbre etc. We also identified how the classes of sound features were used to communicate and grouped them into strategies. These classes and strategies are listed on the sidebar on the next page."
+
 [Game not over: Accessibility issues in video games](https://www.researchgate.net/publication/267403944_Game_Not_Over_Accessibility_Issues_in_Video_Games)
 
 [Game Accessibility: A Survey](https://www.cse.unr.edu/~fredh/papers/journal/29-gaas/paper.pdf)
