@@ -55,3 +55,10 @@ Please ensure that you reference appropirate academic literature and ensure that
 8. At the end of the test, ask children about their
  impressions.
 
+## NEW
+[Representing others' actions. Just like one's own?](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.294.2888&rep=rep1&type=pdf)
+
+[Computer Games as a Part of Children's Culture](https://pdfs.semanticscholar.org/ecce/594e052aebffca38b24991c9eeea71903370.pdf)
+
+[The Chameleon Effect: The Perception-Behavior Link and Social Interaction](https://wuecampus2.uni-wuerzburg.de/moodle/pluginfile.php/71154/mod_resource/content/0/A.pdf)
+
