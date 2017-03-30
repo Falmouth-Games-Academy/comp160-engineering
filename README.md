@@ -30,8 +30,6 @@ Please ensure that you reference appropirate academic literature and ensure that
 
 * "The classes represent the existent types of audio signs in FPS games. The strategies on the other hand, describe how the classes are used to convey information in the game."
 
-[Teaching Programming to the Deaf](http://www.catea.gatech.edu/scitrain/kb/FullText_Articles/Ross.pdf)
-
 [Evaluation of Software Tools with Deaf Children](https://i3.fbk.eu/files/assetts2009.pdf)
 
 * Provides list of guidelines for when evaluating deaf children:
@@ -61,3 +59,5 @@ Please ensure that you reference appropirate academic literature and ensure that
 [Designing Universally Accessible Games](https://www.ics.forth.gr/hci/files/selected_publications/2009_ACMCEM_DG-AS-CS.pdf)
 
 [Playmancer: Games for health with accessibility in mind](https://www.researchgate.net/publication/46532710_PlayMancer_Games_for_Health_with_Accessibility_in_Mind)
+
+[Teaching Programming to the Deaf](http://www.catea.gatech.edu/scitrain/kb/FullText_Articles/Ross.pdf)
