@@ -30,23 +30,6 @@ Please ensure that you reference appropirate academic literature and ensure that
 
 * "The classes represent the existent types of audio signs in FPS games. The strategies on the other hand, describe how the classes are used to convey information in the game."
 
-[Evaluation of Software Tools with Deaf Children](https://i3.fbk.eu/files/assetts2009.pdf)
-
-* Provides list of guidelines for when evaluating deaf children:
-
-1. Organize the test session in public spaces, e.g., schools.
-2. Tests should be carried out with a group of children.
-3. No more than thirty minutes long.
-4. No parents present.
-5. Provide instructions both orally and with sign language.
-6. If written instruction are necessary, pay attention to the
- language used
- After giving instructions to the child, ask her/him to
- repeat them (deaf children often say to have understood
- even if it is not, they teachers affirm).
-8. At the end of the test, ask children about their
- impressions.
-
 [Representing others' actions. Just like one's own?](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.294.2888&rep=rep1&type=pdf)
 
 [Computer Games as a Part of Children's Culture](https://pdfs.semanticscholar.org/ecce/594e052aebffca38b24991c9eeea71903370.pdf)
@@ -61,3 +44,5 @@ Please ensure that you reference appropirate academic literature and ensure that
 [Playmancer: Games for health with accessibility in mind](https://www.researchgate.net/publication/46532710_PlayMancer_Games_for_Health_with_Accessibility_in_Mind)
 
 [Teaching Programming to the Deaf](http://www.catea.gatech.edu/scitrain/kb/FullText_Articles/Ross.pdf)
+
+[Evaluation of Software Tools with Deaf Children](https://i3.fbk.eu/files/assetts2009.pdf)
