@@ -36,6 +36,8 @@ Please ensure that you reference appropirate academic literature and ensure that
 
 [The Chameleon Effect: The Perception-Behavior Link and Social Interaction](https://wuecampus2.uni-wuerzburg.de/moodle/pluginfile.php/71154/mod_resource/content/0/A.pdf)
 
+[An analysis of information conveyed through audio in an FPS game and its impact on deaf players experience](http://ieeexplore.ieee.org.ezproxy.falmouth.ac.uk/document/6363218/)
+
 ## Removed
 [Guidelines of Serious Game Accessibility for the Disabled](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6579380)
 
