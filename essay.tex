@@ -11,35 +11,46 @@
 \usepackage{amsmath}
 
 % Please include a clear, concise, and descriptive title
-\title{Your Title Here}
+\title{How game code and logic can be made more portable between game engines}
 
 % Please do not change the subtitle
 \subtitle{COMP160 - Software Engineering Essay}
 
 % Please put your student number in the author field
-\author{DO NOT WRITE YOUR NAME\\Put your student number (on your ID card) here}
+\author{1603748}
 
 \begin{document}
 
 \maketitle
 
-\abstract{Please include an abstract of at most 100 words (these do not count towards your word count).}
+\abstract{Porting video games to different platforms and engines can be a very tedious task as it requires a lot of re-writing and re-compiling source code. In this essay I present a potential solution to porting games without having to re-write any code. It is a way of separating the logic of the game from the rest of the system to make it possible to use the logic on different engines.}
 
-\section{Introduction}
+\section*{Introduction}
+ 
+In this essay I plan to talk about how game logic and code can be more easily ported to other platforms and engines which will result in more cost effective portability of games to multiple different platforms. I will discuss the benefits of portable logic as well as the ways logic can be made portable between different game engines. I will discuss the feasibility of separating out the logic by representing it using ontologies and rules, and by introducing middleware (an events space) between the logic and the game engine \cite{GameLogic}. I will also highlight the advantages and disadvantages of using blueprints to determine whether they are still worth using.  
 
-Write your introduction here. A brief introduction is recommended, which should outline key details of the chosen topic and the reviewed papers, motivate the work, and provide a roadmap of key points to the reader. The motivation is quite important here, as essays should have a contribution (i.e., what is the point of the essay, and what does the reader take away from the essay) and the link between the motivation (in the introduction) and the contribution (in the conclusion) should be made clear.
+\section{Standard source code porting}
 
-\section{Your section title here}
+Porting of source code usually consists of analysing the source code to see which parts need to modified and which parts need to be re-written \cite{PortingSymbian}. Having good maintainable and readable code will make this process much easier. As well as re-writing and modifying code sometimes you need also consider any architectural changes required in order to make the porting process easier \cite{PortingSymbian}. In addition to to re-writing code and re-architecting it is also necessary to re-compile the code, fix any problems that come up, run tests and debug. This whole process of porting can take a long time.   
 
-Write the main body of your essay here. Add more sections if appropriate. You may choose to write about each of your three papers in its own section, or you may choose a different structure. Either way, remember that you are being assessed on technical insight and analysis: it is not enough to merely summarise the contents of the three papers. You must demonstrate the ability to make inferences beyond what is written in the papers, and to draw the three papers together into a single coherent narrative.
+\section{Porting using an events space}
 
-Your essay must make a clear recommendation, in terms of which of the three techniques you have reviewed is the best according to whichever metric or metrics you feel is most appropriate. You must justify your choice, backing it up with empirical evidence. However remember that an academic essay is not a murder mystery: you should already have briefly discussed your recommendation in the introduction and in other parts of the essay. Do not save it for a grand reveal at the end.
+Games are usually ported by rewriting and recompiling major parts of the game, however it is possible to use the same logic on different game engines by using an events space. The events space is used to separate the logic from the engine. This method of porting logic has been demonstrated using the Torque engine and a bespoke simulation engine. Logic for an accident scenario created as part of a knowledge-gathering exercise for police was serviced to both game engines, thus demonstrating logic portability \cite{GameLogic}.
+The STB (set-top box) game architecture design \cite{STB} uses a similar method to port STB games to different STB environments. The game architecture is divided into three subsystems: the game space, the adapters and the STB environment. Just like the events space, the game space contains the game logic and game state which is separate from the rest of the system. ``The effect this has on portability is that when migrating to a new STB environment, the elements in the game space (i.e., the game state, object model, and game logic) can stay intact''\cite{STB}.
 
-\section{Conclusion}
+\section{Benefits of using an events space}
 
-Write your conclusion here. The conclusion should do more than summarise the essay, making clear the contribution of the work and highlighting key points, limitations, and outstanding questions. It should not introduce any new content or information.
+The logic of any game is the core of the game, it is what determines pretty much everything about the game other than aesthetics. Game engines require the logic to be its own format, for example when making games in the unreal engine it requires you to use blueprints or format your C++ code in the unreal format which can only be executed in the unreal engine. If the logic was separate from the rest of the system it is possible to port the logic to multiple game engines. This would increase logic re-usability amongst projects, as a person could migrate it to a familiar engine and thus avoid the time required learning a new engine \cite{GameLogic}. ``Reuse could reduce development costs and improve quality and productivity, as it often does in mainstream Software Engineering'' \cite{ComputerGameSE}. It would also increase the scalability possibilities for the logic, depending on the future development of game engine capabilities \cite{GameLogic}. In mobile applications porting is an essential part of development, particularly in games \cite{PortingJ2ME,PortingMobileGames}, so having portable logic and code would make that activity significantly easier.
 
-\bibliographystyle{ieeetran}
+\section*{Conclusion}
+
+In conclusion, logic and code can be easily made portable to different game engines by using an events space. Although it is possible to use the same the logic on different engines it is not yet something that anyone can do. Only people who have this architecture or know how to make it can use it. So is it still worth using blueprints in the unreal engine? For now, yes, but in the future this new way of porting games may be used in the games industry as it would reduce time and cost of porting games significantly.
+
+
+
+
+\bibliographystyle{IEEEtran}
 \bibliography{references}
+
 
 \end{document}
